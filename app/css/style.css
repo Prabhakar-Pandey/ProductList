@@ -1,0 +1,128 @@
+.tile{
+    width: 200px;
+    height: 350px;
+    float: left;
+        padding: 10px;
+}
+
+.tile img{
+    width: 200px;
+    height: 200px;
+}
+
+.clear {
+        clear: both;
+}
+    body {  
+            margin: 0;  
+            background: #e6e6e6;  
+        }  
+        .showSlide {  
+            display: none  
+        }  
+            .showSlide img {  
+                width: 100%;  
+            }  
+        .slidercontainer {  
+            
+            position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc; 
+        }  
+        .left, .right {  
+            cursor: pointer;  
+            position: absolute;  
+            top: 50%;  
+            width: auto;  
+            padding: 16px;  
+            margin-top: -22px;  
+            color: white;  
+            font-weight: bold;  
+            font-size: 18px;  
+            transition: 0.6s ease;  
+            border-radius: 0 3px 3px 0; 
+            background-color: #ccc; 
+        }  
+        .right {  
+            right: 0;  
+            border-radius: 3px 0 0 3px;  
+        }  
+            .left:hover, .right:hover {  
+                background-color: rgba(115, 115, 115, 0.8);  
+            }  
+        .content {  
+            color: #eff5d4;  
+            font-size: 30px;  
+            padding: 8px 12px;  
+            position: absolute;  
+            top: 10px;  
+            width: 100%;  
+            text-align: center;  
+            background-color: #ccc;
+    position: relative;
+    color: #000;
+    font-size: 25px;
+    width: 95%;
+    margin-top: -10px;
+        }  
+.close{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: -20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    top: -20px;
+        z-index: 999;
+}
+        .active {  
+            background-color: #717171;  
+        }  
+        /* Fading animation */  
+        .fade {  
+            -webkit-animation-name: fade;  
+            -webkit-animation-duration: 1.5s;  
+            animation-name: fade;  
+            animation-duration: 1.5s;  
+        }  
+        @-webkit-keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+  
+        @keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+        .container-wrapper{
+                width: 90%;
+                margin: auto;
+        }
+            .image-wrapper{
+                width: 100%;
+            }
+
+            input{
+                width: 100px;
+    height: 40px;
+    background-color: #2fa92f;
+    border: 0;
+            }
+input:hover{
+    background-color: #ccc;
+            }
