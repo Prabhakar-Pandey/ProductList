@@ -70,5 +70,5 @@ class MainPageContainer extends React.Component {
     
   }
 }
-ReactDOM.render(<MainPageContainer config={{dataToShow:2,timeInMillisec:2000}} />,document.getElementById('mainContainer'))
+ReactDOM.render(<MainPageContainer config={{dataToShow:2,timeInMillisec:1000}} />,document.getElementById('mainContainer'))
 
