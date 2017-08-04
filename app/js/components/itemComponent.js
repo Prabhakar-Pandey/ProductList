@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import CardComponent from '../components/cardComponent';
-
+// componet is responsible to reder the list ui.
 class ItemComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -12,7 +12,6 @@ class ItemComponent extends React.Component {
       let abstractText = this.props.item.abstractText;
       let author = this.props.item.author;
       let imageObject = this.props.item.images;
-      console.log(imageObject)
         var indents = [];
         Object.keys(imageObject).map((key, index)=>{
             indents.push(<CardComponent key={index} uniqueId={index} imageObject={imageObject} image={imageObject[key]} />);    

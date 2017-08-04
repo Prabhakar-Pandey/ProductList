@@ -21,6 +21,7 @@ class MainPageContainer extends React.Component {
             console.log(data,"data")
             this.allData=data.items;
         });
+        // for infinite scrolling effect
         this.updateDataToshow(this.initialIndex,this.lastIndex);
         this.listenScrollEvent=this.listenScrollEvent.bind(this);
         window.addEventListener('scroll', this.listenScrollEvent);
@@ -55,7 +56,6 @@ class MainPageContainer extends React.Component {
 
   render() {
       let indent = [];
-      console.log(this.state.data.length,"state data")
       for(var i=0;i<this.state.data.length;i++){
             //console.log(this.state.data[i]);
                 if(this.state.data.length){
@@ -70,5 +70,6 @@ class MainPageContainer extends React.Component {
     
   }
 }
+//Initializing point of react application, passing configuration for application here
 ReactDOM.render(<MainPageContainer config={{dataToShow:2,timeInMillisec:1000}} />,document.getElementById('mainContainer'))
 

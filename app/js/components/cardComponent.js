@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ImageSliderComponent from '../components/imageSliderComponent'
-
+// component is responsible to show images in tiles
 class CardComponent extends React.Component {
     constructor(props) {
         super(props);

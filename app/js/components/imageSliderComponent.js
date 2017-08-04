@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+// this component is used for slider with images
 class ImageSliderComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -17,7 +17,6 @@ class ImageSliderComponent extends React.Component {
         
             var i;  
             var slides = document.getElementsByClassName("showSlide");  
-            console.log(n,slides.length,n > slides.length,"<<----n")
             if (n > slides.length) { this.slide_index = 1 }  
             
             if (n < 1) { this.slide_index = slides.length }  
